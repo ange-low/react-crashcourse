@@ -15,6 +15,14 @@ body {
   display: none !important;
 }
 
+.message {
+  font-size: 28px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
 /* MAIN LAYOUT */
 #root {
   max-width: 1500px;
@@ -120,6 +128,10 @@ h1 {
 
 .vote-buttons button:hover {
   background-color: #292524;
+}
+
+.vote-buttons button:disabled {
+  background-color: #44403c;
 }
 
 ul {
