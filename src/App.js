@@ -284,7 +284,6 @@ function Fact({ fact, setFacts }) {
       .update({ [columnName]: fact[columnName] + 1 })
       .eq("id", fact.id)
       .select();
-    setIsUpdating();
 
     if (!error)
       setFacts((facts) =>
